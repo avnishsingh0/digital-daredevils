@@ -29,16 +29,16 @@ const handleNext=()=>{
     <div className='bg'>
     
     <div className="home">
-        {/* <div className='home-container'> */}
-            {/* <div className='logo'>
-                <img src="https://res.cloudinary.com/djo88dwrg/image/upload/v1677915063/Screenshot_2023-03-04_at_12.58.01_PM-removebg-preview_jnptsr.png" alt="img"/>
-               aaaa
+    
+        <div className='home-container'>
+            <div className='logo'>
+               
                 <center>
-                <button className='btn-1' onClick={handleNext} >New game</button>
+                <h3></h3>
                 
                 </center>
-            </div> */}
-        {/* </div> */}
+            </div>
+        </div>
     </div>
     </div>
   )

@@ -53,14 +53,14 @@
     flex-direction: column 
   }
   .bg{
-    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Y0OGNlNGQ5NWRmYTc5NjU4MWQ3OTRlYzI0ZjU1NWUzOWRhNzE1MiZjdD1n/Ll9VB9cIwiq7yDkR3G/giphy.gif) ;
+    background-image: url(https://media.istockphoto.com/id/493959601/photo/jigsaw-puzzle-on-blue.jpg?b=1&s=170667a&w=0&k=20&c=bOQPDhHU0VNHrl249nhVErMQ9_o1UssxljBWdrBcF30=)
   }
   .home {
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     height: 100vh ;
     overflow: hidden;
-   
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWQ0OGQzMjczNTFjODdjOGM1Y2M1ZTQxZjk5Zjc3YjgyNDU1ODZhMyZjdD1n/Ll9VB9cIwiq7yDkR3G/giphy.gif) ;
     background-size:  cover ; 
     background-repeat:  no-repeat ;
     background-position:  center center ;
