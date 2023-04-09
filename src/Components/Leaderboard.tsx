@@ -17,7 +17,7 @@ export const Leaderboard: React.FC = () => {
     }, []);
     
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
+    <div className="flex flex-col justify-center items-center h-screen bg-[url('https://t3.ftcdn.net/jpg/02/87/87/18/360_F_287871802_GrrmM4RgBQt7hfIPYFTkRqaj2Fb8xvY4.jpg')]">
       <h1 className="text-3xl font-bold mb-4">Leaderboard</h1>
       <table className="w-1/2">
         <thead>

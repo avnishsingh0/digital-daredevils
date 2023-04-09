@@ -191,7 +191,7 @@ const Canvas = () => {
 
   }, [])
   return (
-    <div>
+    <div className='bodys'>
       {/* <header></header> */}
       <main id="main"></main>
       <footer>
