@@ -1,12 +1,13 @@
 import React from 'react';
 import AllRoutes from './Pages/AllRoutes';
 
-function App() {
+
+const App = () => {
   return (
     <div>
-      <AllRoutes/>
+         <AllRoutes/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
