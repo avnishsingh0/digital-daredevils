@@ -12,7 +12,7 @@ export const LeaderboardEntry: React.FC<ILeaderboardEntryProps> = ({
   score,
 }) => {
   return (
-    <tr className="bg-gray-200">
+    <tr className="bg-none">
       <td className="py-2 px-4 text-center font-medium">{rank}</td>
       <td className="py-2 px-4 text-center">{name}</td>
       <td className="py-2 px-4 text-center font-medium">{score}</td>
