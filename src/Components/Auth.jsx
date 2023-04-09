@@ -137,17 +137,19 @@ const Auth= () => {
                   Verify your phone number
                 </label>
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
+                
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
+
                   }}>
                   <CgUserList size="44px" className="bg-white py-2" style={{ borderRadius: "5px 0 0 5px" }} />
                   <input
                     style={{
                       padding: "10px",
                       color: "black",
-                      width: "85%",
+                      width: "87%",
                       borderRadius: "0 5px 5px 0",
                       border: "1px solid black",
                       fontWeight: "bold",
