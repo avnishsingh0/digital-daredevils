@@ -149,7 +149,7 @@ const Auth= () => {
                     style={{
                       padding: "10px",
                       color: "black",
-                      width: "87%",
+                      width: "100%",
                       borderRadius: "0 5px 5px 0",
                       border: "1px solid black",
                       fontWeight: "bold",
