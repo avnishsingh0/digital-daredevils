@@ -1,6 +1,6 @@
 $light: #eee;
 $dark: #252627;
-$bar: #aa6657;
+$bar: #7fee00;
 
 body {
   height: 100vh;
@@ -47,6 +47,10 @@ footer {
   ul {
     display: flex;
     flex-direction: row-reverse;
+    .lifeline{
+      width: 25px;
+      height: 25px;
+    }
     
     .misses {
       padding: .5vh;
