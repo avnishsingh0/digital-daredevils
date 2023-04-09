@@ -44,7 +44,8 @@ const Homepage = () => {
     
         <div className='home-container'>
         <button className='bg' onClick={handleButtonClick}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? <img style={{width:'35px',height:"35px",border:"0.1rem solid #eee;"}} src="volume.png" alt="" /> 
+        : <img style={{width:'35px',height:"35px",border:"3px"}} className='volumeBTN' src="volume-mute.png" alt="" />}
       </button>
            <h3 className='text-6xl mt-0 font-black' >FireByMisFire</h3>
            
