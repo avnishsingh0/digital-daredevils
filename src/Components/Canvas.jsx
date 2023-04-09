@@ -191,7 +191,7 @@ function polyfillKey() {
 <main id="main"></main>
 <footer>
   <ul>
-    <li className="misses">+</li>
+    <li className="misses">++</li>
     <li className="misses">+</li>
     <li className="misses">+</li>
     <li className="misses">+</li>
