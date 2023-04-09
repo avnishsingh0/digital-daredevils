@@ -139,7 +139,7 @@ function playGame(replay) {
   }
   function addScore() {
     score++;
-    scoreElement.textContent = score;
+    scoreElement.textContent = score*10;
   }
   
   document.body.addEventListener('keypress', onPress);
