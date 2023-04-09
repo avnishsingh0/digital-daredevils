@@ -6,22 +6,21 @@ import "./LandingPage.css"
 
 
 const Homepage = () => {
-
     const [block, setBlock] = useState(false);
     const [next, setNext] = useState(false);
     const navigate=useNavigate();
-  
-const handleEnter=()=>{
+    const handleEnter=()=>{
     setBlock(true);
     setNext(true)
+  }
 
-}
-const handleNext=()=>{
+  const handleNext=()=>{
     navigate("/login")
-}
- const [isPlaying, setIsPlaying] = useState(false);
+  }
+
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = React.useRef<HTMLAudioElement>(new Audio(music));
-  
+
   useEffect(() => {
     const audio = audioRef.current;
     if (isPlaying) {
@@ -34,8 +33,7 @@ const handleNext=()=>{
   const handleButtonClick = () => {
     setIsPlaying(!isPlaying);
   };
-
-    
+  
   return (
     <div className='bg' style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://zty.pe/media/background/page.png')`,
@@ -46,9 +44,11 @@ const handleNext=()=>{
     
     <div className="home">
     
-        <div className='home-container'>
-        <button style={{"float":"left"}} onClick={handleButtonClick}>
-        {isPlaying ? 'Pause' : 'Play'}
+        
+        <button className='bg' onClick={handleButtonClick}>
+        {isPlaying ? <img style={{width:'35px',height:"35px",border:"0.1rem solid #eee;"}} src="volume.png" alt="" /> 
+        : <img style={{width:'35px',height:"35px",border:"3px"}} className='volumeBTN' src="volume-mute.png" alt="" />}
+
       </button>
            <h3 className='text-6xl mt-0 font-black' >FireByMisFire</h3>
            
@@ -74,7 +74,7 @@ const handleNext=()=>{
           
         </div>
     </div>
-    </div>
+   
    
 
   )
