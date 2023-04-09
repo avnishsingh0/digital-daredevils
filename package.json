@@ -11,13 +11,9 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@types/react-fontawesome": "^1.6.5",
-<<<<<<< HEAD
-    "json-server": "^0.17.3",
-=======
     "firebase": "^9.19.1",
     "json-server": "^0.17.3",
     "otp-input-react": "^0.3.0",
->>>>>>> 41fe5c9d551e6cdcd203729dee1f86461239b530
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
