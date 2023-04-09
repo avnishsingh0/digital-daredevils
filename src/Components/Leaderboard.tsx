@@ -39,5 +39,6 @@ export const Leaderboard: React.FC = () => {
         </tbody>
       </table>
     </div>
+    
   );
 };

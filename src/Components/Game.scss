@@ -2,19 +2,19 @@ $light: #eee;
 $dark: #252627;
 $bar: #7fee00;
 
-body {
-  height: 100vh;
-  background: $dark;
-  overflow: hidden;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  color: $light;
-  font-family: -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-  font-family: monospace;
-  font-size: 5vh;
-  position: relative;
-}
+// body {
+//   height: 100vh;
+//   background: $dark;
+//   overflow: hidden;
+//   display: flex;
+//   align-items: stretch;
+//   flex-direction: column;
+//   color: $light;
+//   font-family: -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+//   font-family: monospace;
+//   font-size: 5vh;
+//   position: relative;
+// }
 main {
   flex: 1;
   display: flex;
