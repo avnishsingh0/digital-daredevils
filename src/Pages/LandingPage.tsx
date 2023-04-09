@@ -4,22 +4,21 @@ import music from "../Assets/music1.mp3";
 import { Link, useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
-
     const [block, setBlock] = useState(false);
     const [next, setNext] = useState(false);
     const navigate=useNavigate();
-  
-const handleEnter=()=>{
+    const handleEnter=()=>{
     setBlock(true);
     setNext(true)
+  }
 
-}
-const handleNext=()=>{
+  const handleNext=()=>{
     navigate("/login")
-}
- const [isPlaying, setIsPlaying] = useState(false);
+  }
+
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = React.useRef<HTMLAudioElement>(new Audio(music));
-  
+
   useEffect(() => {
     const audio = audioRef.current;
     if (isPlaying) {
@@ -32,8 +31,7 @@ const handleNext=()=>{
   const handleButtonClick = () => {
     setIsPlaying(!isPlaying);
   };
-
-    
+  
   return (
     <div className='bg' style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://zty.pe/media/background/page.png')`,
