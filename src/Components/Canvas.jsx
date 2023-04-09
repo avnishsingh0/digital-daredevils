@@ -1,19 +1,8 @@
 import React, { useEffect } from 'react'
 import './Game.scss'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Homepage from '../Pages/LandingPage';
 const Canvas = () => {
-
-  let navigate = useNavigate();
-  const routeHomePage = () => {
-    let path = '/';
-    navigate(path);
-  }
-
-  const routeLeaderboard = () => {
-    let path = '/';
-    navigate(path);
-  }
 
   useEffect(() => {
 
@@ -24,6 +13,8 @@ const Canvas = () => {
     function loadGame() {
       var button = document.createElement('button');
       button.textContent = 'Start Game';
+      button.classList.add('buttonStyle')
+      // button.style.border= '0.3rem solid #eee'
       var main = document.getElementById('main');
       main.appendChild(button);
       var rules = document.createElement('p');
@@ -147,7 +138,7 @@ const Canvas = () => {
               fill: 'both'
             });
             addScore();
-            header.textContent += char;
+            // header.textContent += char;
           }
         }
       }
@@ -200,7 +191,7 @@ const Canvas = () => {
 
   }, [])
   return (
-    <div>
+    <div className='bodys'>
       {/* <header></header> */}
       <main id="main"></main>
       <footer>
@@ -215,8 +206,13 @@ const Canvas = () => {
       </footer>
       <div id="game-over">
         <p>Game Over</p>
-        <button onClick={routeHomePage}>Go to HomePage</button>
-        <button onClick={routeLeaderboard}>Check Leaderboard</button>
+        <Link to={"/"}>
+          <button className='buttonStyle'>Go to HomePage</button>
+        </Link>
+        <Link to={'/leaderboard'}>
+          <button className='buttonStyle'>Check Leaderboard</button>
+        </Link>
+
       </div>
     </div>
   )

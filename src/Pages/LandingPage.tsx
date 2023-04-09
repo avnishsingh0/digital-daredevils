@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import "../App.css";
 import music from "../Assets/music1.mp3";
 import { Link, useNavigate } from 'react-router-dom';
+import "./LandingPage.css"
+
 
 const Homepage = () => {
     const [block, setBlock] = useState(false);
@@ -42,22 +44,29 @@ const Homepage = () => {
     
     <div className="home">
     
-        <div className='home-container'>
+        
         <button className='bg' onClick={handleButtonClick}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? <img style={{width:'35px',height:"35px",border:"0.1rem solid #eee;"}} src="volume.png" alt="" /> 
+        : <img style={{width:'35px',height:"35px",border:"3px"}} className='volumeBTN' src="volume-mute.png" alt="" />}
+
       </button>
            <h3 className='text-6xl mt-0 font-black' >FireByMisFire</h3>
            
            <center className='under_home'>
-            <Link className='under_home' to={"/game"}>
-           <p className='text-2xl mt-24'>new game</p>
+            <button className='glow-on-hover'>
+            <Link className='under_home' to={"/Auth"} 
+            >
+           New game
            </Link>
-           <Link className='under_home' to={"/setting"}>
+           </button>
+
+           {/* <button className="glow-on-hover" type="button">New game</button> */}
+           {/* <Link className='under_home' to={"/setting"}>
            <p className='text-2xl mt-3'>setting</p>
            </Link>
            <Link className='under_home' to={"/leaderbord"}>
            <p className='text-2xl mt-3'>my stats</p>
-           </Link>
+           </Link> */}
            <br/>
            {/* <p className='text-2xl'>Happp Ending</p> */}
            
@@ -65,7 +74,7 @@ const Homepage = () => {
           
         </div>
     </div>
-    </div>
+   
    
 
   )
