@@ -1,43 +1,43 @@
 {
     "game" : [
         {
-          "name": "Player 1",
+          "name": "Avnish Kumar",
           "score": 100
         },
         {
-          "name": "Player 2",
-          "score": 190
+          "name": "Prince Sharma",
+          "score": 90
         },
         {
-          "name": "Player 3",
+          "name": "Ruchi Priya",
           "score": 80
         },
         {
-          "name": "Player 4",
+          "name": "Soaib Akhtar",
           "score": 70
         },
         {
-          "name": "Player 5",
+          "name": "Chunnu",
           "score": 60
         },
         {
-          "name": "Player 6",
+          "name": "Munnu",
           "score": 50
         },
         {
-          "name": "Player 7",
+          "name": "Bob",
           "score": 40
         },
         {
-          "name": "Player 8",
+          "name": "Jack",
           "score": 30
         },
         {
-          "name": "Player 9",
+          "name": "Oggy",
           "score": 20
         },
         {
-          "name": "Player 10",
+          "name": "jhaplu",
           "score": 10
         }
       ]      
